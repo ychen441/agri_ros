@@ -1,0 +1,6 @@
+# Sets the sensitivity of the cluster detection to
+# 0x0: Standard
+# 0x1: High sensitivity
+
+uint8 rcs_threshold
+---

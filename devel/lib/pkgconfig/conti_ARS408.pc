@@ -1,0 +1,8 @@
+prefix=/home/chen/agri_ros/devel
+
+Name: conti_ARS408
+Description: Description of conti_ARS408
+Version: 0.0.0
+Cflags: -I/home/chen/agri_ros/devel/include -I/home/chen/agri_ros/src/conti_ARS408/include
+Libs: -L${prefix}/lib -lconti_ARS408_can -lconti_ARS408_msg -lsocket_can
+Requires: roscpp message_runtime

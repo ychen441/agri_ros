@@ -1,0 +1,10 @@
+# Maximum distance of far scan (near scan maximum
+# distance is set proportionally to half of the far scan).
+# The maximum distance will also change the range
+# resolution proportionally.
+# ARS408:
+# Standard Range: 96 – 260 m
+# Extended Range: 96 – 1200 m 
+
+uint8 max_distance
+---

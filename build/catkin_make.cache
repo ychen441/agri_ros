@@ -1,0 +1,2 @@
+conti_ARS408:realsense-ros/realsense2_camera:realsense-ros/realsense2_description:rslidar_sdk
+-DCATKIN_DEVEL_PREFIX=/home/chen/agri_ros/devel -DCMAKE_INSTALL_PREFIX=/home/chen/agri_ros/install -G Unix Makefiles
