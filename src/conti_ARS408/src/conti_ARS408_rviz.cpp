@@ -17,23 +17,23 @@ namespace conti_ARS408{
         velocity_RViz_pub_ = nh.advertise<visualization_msgs::MarkerArray>("velocity_RViz", 50);
         
         /*Subscribe cluster_ROS and object_ROS.nodes with clusters and objs info, perspectively*/
-        cluster_RViz_sub_ = nh.subscribe("cluster_ROS", 50, &conti_ARS408_RViz::cluster_RViz, this);
-        object_RViz_sub_ = nh.subscribe("object_ROS", 50, &conti_ARS408_RViz::object_RViz, this);
+        cluster_RViz_sub_ = nh.subscribe("conti_ARS408/cluster_ROS", 50, &conti_ARS408_RViz::cluster_RViz_Callback, this);
+        object_RViz_sub_ = nh.subscribe("conti_ARS408/object_ROS", 50, &conti_ARS408_RViz::object_RViz_Callback, this);
     }
 
     conti_ARS408::conti_ARS408_RViz::~conti_ARS408_RViz(){}
 
-    void conti_ARS408::conti_ARS408_RViz::cluster_RViz(conti_ARS408::radar_cluster clusters){
+    void conti_ARS408::conti_ARS408_RViz::cluster_RViz_Callback(conti_ARS408::radar_cluster radar_clusters){
 
         visualization_msgs::MarkerArray cluster_array;
 
-        for (auto cluster_info_new: clusters.cluster_info){
+        for (auto cluster_info_new: radar_clusters.cluster_info){
 
             visualization_msgs::Marker cluster;
 
             cluster.type = visualization_msgs::Marker::POINTS;
-            cluster.header.frame_id = clusters.header.frame_id;
-            cluster.header.stamp = clusters.header.stamp;
+            cluster.header.frame_id = radar_clusters.header.frame_id;
+            cluster.header.stamp = radar_clusters.header.stamp;
             cluster.action = visualization_msgs::Marker::ADD; //add/modify an object
             cluster.id = cluster_info_new.ClusterID;
             cluster.points.push_back(cluster_info_new.ClusterPosn.pose.position);
@@ -130,18 +130,18 @@ namespace conti_ARS408{
         cluster_RViz_pub_.publish(cluster_array);
     }
 
-    void conti_ARS408::conti_ARS408_RViz::object_RViz(conti_ARS408::radar_object objects){
+    void conti_ARS408::conti_ARS408_RViz::object_RViz_Callback(conti_ARS408::radar_object radar_objects){
 
         visualization_msgs::MarkerArray object_array;
         visualization_msgs::MarkerArray velocity_array;
 
-        for(auto object_info_new: objects.object_info){
+        for(auto object_info_new: radar_objects.object_info){
 
             visualization_msgs::Marker object;
 
             object.type = visualization_msgs::Marker::LINE_STRIP;
-            object.header.frame_id = objects.header.frame_id;
-            object.header.stamp = objects.header.stamp;
+            object.header.frame_id = radar_objects.header.frame_id;
+            object.header.stamp = radar_objects.header.stamp;
             object.action = visualization_msgs::Marker::ADD;
             object.id = object_info_new.ObjectID;
 
@@ -239,8 +239,8 @@ namespace conti_ARS408{
         visualization_msgs::Marker velocity;
 
         velocity.type = visualization_msgs::Marker::TEXT_VIEW_FACING;
-        velocity.header.frame_id = objects.header.frame_id;
-        velocity.header.stamp = objects.header.stamp;
+        velocity.header.frame_id = radar_objects.header.frame_id;
+        velocity.header.stamp = radar_objects.header.stamp;
         velocity.action = visualization_msgs::Marker::ADD;
         velocity.id= object_info_new.ObjectID;
         velocity.text = std::to_string(hypot(object_info_new.ObjectVrel.twist.linear.x,

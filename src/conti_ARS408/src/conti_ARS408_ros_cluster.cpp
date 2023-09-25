@@ -11,7 +11,7 @@ namespace conti_ARS408{
             conti_0x600_ClusterStatus_ = conti_ARS408_can->get_ClusterStatus();
             conti_0x701_ClusterGeneral_ = conti_ARS408_can->get_ClusterGeneral();
             conti_0x702_ClusterQuality_ = conti_ARS408_can->get_ClusterQuality();
-            cluster_ROS_pub_ = nh.advertise<conti_ARS408::radar_cluster>("cluster_ROS", 10);
+            cluster_ROS_pub_ = nh.advertise<conti_ARS408::radar_cluster>("conti_ARS408/cluster_ROS", 10);
         }
 
     conti_ARS408::cluster_ROS::~cluster_ROS(){}

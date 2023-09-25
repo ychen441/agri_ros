@@ -75,7 +75,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /visualize_clusters
+      Marker Topic: /cluster_RViz
       Name: MarkerArray
       Namespaces:
         {}
@@ -83,7 +83,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /visualize_objects
+      Marker Topic: /object_RViz
       Name: MarkerArray
       Namespaces:
         {}
@@ -91,7 +91,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /visualize_velocity
+      Marker Topic: /velocity_RViz
       Name: MarkerArray
       Namespaces:
         {}

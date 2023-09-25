@@ -1,0 +1,8 @@
+prefix=/home/chen/agri_ros/devel
+
+Name: time_sync
+Description: Description of time_sync
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

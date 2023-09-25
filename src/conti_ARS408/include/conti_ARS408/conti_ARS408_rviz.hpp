@@ -28,8 +28,8 @@ namespace conti_ARS408{
          ~conti_ARS408_RViz();
 
         private:
-         void cluster_RViz(conti_ARS408::radar_cluster clusters);
-         void object_RViz(conti_ARS408::radar_object objects);
+         void cluster_RViz_Callback(conti_ARS408::radar_cluster radar_clusters);
+         void object_RViz_Callback(conti_ARS408::radar_object radar_objects);
          
          ros::Publisher cluster_RViz_pub_;
          ros::Publisher object_RViz_pub_;

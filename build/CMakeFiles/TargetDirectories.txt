@@ -50,6 +50,13 @@
 /home/chen/agri_ros/build/realsense-ros/realsense2_description/CMakeFiles/rebuild_cache.dir
 /home/chen/agri_ros/build/realsense-ros/realsense2_description/CMakeFiles/list_install_components.dir
 /home/chen/agri_ros/build/realsense-ros/realsense2_description/CMakeFiles/install.dir
+/home/chen/agri_ros/build/time_sync/CMakeFiles/install/strip.dir
+/home/chen/agri_ros/build/time_sync/CMakeFiles/install/local.dir
+/home/chen/agri_ros/build/time_sync/CMakeFiles/install.dir
+/home/chen/agri_ros/build/time_sync/CMakeFiles/list_install_components.dir
+/home/chen/agri_ros/build/time_sync/CMakeFiles/rebuild_cache.dir
+/home/chen/agri_ros/build/time_sync/CMakeFiles/edit_cache.dir
+/home/chen/agri_ros/build/time_sync/CMakeFiles/test.dir
 /home/chen/agri_ros/build/conti_ARS408/CMakeFiles/install/strip.dir
 /home/chen/agri_ros/build/conti_ARS408/CMakeFiles/install.dir
 /home/chen/agri_ros/build/conti_ARS408/CMakeFiles/list_install_components.dir

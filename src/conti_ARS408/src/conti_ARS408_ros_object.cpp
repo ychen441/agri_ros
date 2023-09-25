@@ -16,7 +16,7 @@ namespace conti_ARS408{
             conti_0x60B_ObjectGeneral_ = conti_ARS408_can_->get_ObjectGeneral();
             conti_0x60C_ObjectQuality_ = conti_ARS408_can_->get_ObjectQuality();
             conti_0x60D_ObjectExtended_ = conti_ARS408_can_->get_ObjectExtended();
-            object_ROS_pub_ = nh.advertise<conti_ARS408::radar_object>("object_ROS", 10);
+            object_ROS_pub_ = nh.advertise<conti_ARS408::radar_object>("conti_ARS408/object_ROS", 10);
         }
 
     conti_ARS408::object_ROS::~object_ROS(){}

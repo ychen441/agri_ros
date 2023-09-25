@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/chen/agri_ros/build
 # The main recursive "all" target.
 all: gtest/all
 all: realsense-ros/realsense2_description/all
+all: time_sync/all
 all: conti_ARS408/all
 all: rslidar_sdk/all
 all: realsense-ros/realsense2_camera/all
@@ -64,6 +65,7 @@ all: realsense-ros/realsense2_camera/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: realsense-ros/realsense2_description/preinstall
+preinstall: time_sync/preinstall
 preinstall: conti_ARS408/preinstall
 preinstall: rslidar_sdk/preinstall
 preinstall: realsense-ros/realsense2_camera/preinstall
@@ -78,6 +80,7 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: realsense-ros/realsense2_description/clean
+clean: time_sync/clean
 clean: conti_ARS408/clean
 clean: rslidar_sdk/clean
 clean: realsense-ros/realsense2_camera/clean
@@ -367,6 +370,24 @@ rslidar_sdk/src/rs_driver/preinstall:
 rslidar_sdk/src/rs_driver/clean:
 
 .PHONY : rslidar_sdk/src/rs_driver/clean
+
+#=============================================================================
+# Directory level rules for directory time_sync
+
+# Recursive "all" directory target.
+time_sync/all:
+
+.PHONY : time_sync/all
+
+# Recursive "preinstall" directory target.
+time_sync/preinstall:
+
+.PHONY : time_sync/preinstall
+
+# Recursive "clean" directory target.
+time_sync/clean:
+
+.PHONY : time_sync/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
