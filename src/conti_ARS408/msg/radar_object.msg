@@ -2,4 +2,4 @@
 std_msgs/Header header
 
 # Object CAN messages
-conti_ARS408/radar_object_info[] object_info
+conti_ars408/radar_object_info[] object_info

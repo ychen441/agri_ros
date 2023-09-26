@@ -2,4 +2,4 @@
 std_msgs/Header header
 
 # cluster CAN messages
-conti_ARS408/radar_cluster_info[] cluster_info
+conti_ars408/radar_cluster_info[] cluster_info

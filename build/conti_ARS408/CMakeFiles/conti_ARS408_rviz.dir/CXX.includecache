@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/chen/agri_ros/devel/include/conti_ARS408/radar_cluster.h
+/home/chen/agri_ros/devel/include/conti_ars408/radar_cluster.h
 string
 -
 vector
@@ -23,10 +23,10 @@ ros/message_operations.h
 -
 std_msgs/Header.h
 -
-conti_ARS408/radar_cluster_info.h
+conti_ars408/radar_cluster_info.h
 -
 
-/home/chen/agri_ros/devel/include/conti_ARS408/radar_cluster_info.h
+/home/chen/agri_ros/devel/include/conti_ars408/radar_cluster_info.h
 string
 -
 vector
@@ -46,7 +46,7 @@ geometry_msgs/PoseWithCovariance.h
 geometry_msgs/TwistWithCovariance.h
 -
 
-/home/chen/agri_ros/devel/include/conti_ARS408/radar_object.h
+/home/chen/agri_ros/devel/include/conti_ars408/radar_object.h
 string
 -
 vector
@@ -63,10 +63,10 @@ ros/message_operations.h
 -
 std_msgs/Header.h
 -
-conti_ARS408/radar_object_info.h
+conti_ars408/radar_object_info.h
 -
 
-/home/chen/agri_ros/devel/include/conti_ARS408/radar_object_info.h
+/home/chen/agri_ros/devel/include/conti_ars408/radar_object_info.h
 string
 -
 vector
@@ -88,27 +88,27 @@ geometry_msgs/TwistWithCovariance.h
 geometry_msgs/AccelWithCovariance.h
 -
 
-/home/chen/agri_ros/src/conti_ARS408/include/conti_ARS408/conti_ARS408_rviz.hpp
+/home/chen/agri_ros/src/conti_ars408/include/conti_ars408/conti_ars408_rviz.hpp
 ros/ros.h
 -
-conti_ARS408/radar_cluster.h
-/home/chen/agri_ros/src/conti_ARS408/include/conti_ARS408/conti_ARS408/radar_cluster.h
-conti_ARS408/radar_object.h
-/home/chen/agri_ros/src/conti_ARS408/include/conti_ARS408/conti_ARS408/radar_object.h
+conti_ars408/radar_cluster.h
+/home/chen/agri_ros/src/conti_ars408/include/conti_ars408/conti_ars408/radar_cluster.h
+conti_ars408/radar_object.h
+/home/chen/agri_ros/src/conti_ars408/include/conti_ars408/conti_ars408/radar_object.h
 
-/home/chen/agri_ros/src/conti_ARS408/src/conti_ARS408_rviz.cpp
+/home/chen/agri_ros/src/conti_ars408/src/conti_ars408_rviz.cpp
 ros/ros.h
 -
 visualization_msgs/MarkerArray.h
 -
 tf2_geometry_msgs/tf2_geometry_msgs.h
 -
-conti_ARS408/radar_cluster.h
-/home/chen/agri_ros/src/conti_ARS408/src/conti_ARS408/radar_cluster.h
-conti_ARS408/radar_object.h
-/home/chen/agri_ros/src/conti_ARS408/src/conti_ARS408/radar_object.h
-conti_ARS408/conti_ARS408_rviz.hpp
-/home/chen/agri_ros/src/conti_ARS408/src/conti_ARS408/conti_ARS408_rviz.hpp
+conti_ars408/radar_cluster.h
+/home/chen/agri_ros/src/conti_ars408/src/conti_ars408/radar_cluster.h
+conti_ars408/radar_object.h
+/home/chen/agri_ros/src/conti_ars408/src/conti_ars408/radar_object.h
+conti_ars408/conti_ars408_rviz.hpp
+/home/chen/agri_ros/src/conti_ars408/src/conti_ars408/conti_ars408_rviz.hpp
 
 /opt/ros/noetic/include/geometry_msgs/Accel.h
 string

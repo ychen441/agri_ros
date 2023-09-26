@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/chen/agri_ros/src/conti_ARS408/include/conti_ARS408/socket_can.hpp
+/home/chen/agri_ros/src/conti_ARS408/include/conti_ars408/socket_can.hpp
 cstdint
 -
 errno.h
@@ -33,6 +33,6 @@ linux/can/raw.h
 -
 
 /home/chen/agri_ros/src/conti_ARS408/src/socket_can.cpp
-conti_ARS408/socket_can.hpp
-/home/chen/agri_ros/src/conti_ARS408/src/conti_ARS408/socket_can.hpp
+conti_ars408/socket_can.hpp
+/home/chen/agri_ros/src/conti_ARS408/src/conti_ars408/socket_can.hpp
 

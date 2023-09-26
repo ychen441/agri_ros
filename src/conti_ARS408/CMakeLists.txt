@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(conti_ARS408)
+project(conti_ars408)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -129,8 +129,8 @@ catkin_package(
     INCLUDE_DIRS 
     include
     LIBRARIES 
-    conti_ARS408_can
-    conti_ARS408_msg
+    conti_ars408_can
+    conti_ars408_msg
     socket_can
     CATKIN_DEPENDS 
     roscpp 
@@ -149,23 +149,23 @@ include_directories(include)
 
 
 ## Declare a C++ library
- add_library(conti_ARS408_msg
-   src/conti_ARS408_sensor_state.cpp
-   src/conti_ARS408_sensor_config.cpp
-   src/conti_ARS408_sensor_input.cpp
-   src/conti_ARS408_sensor_cluster.cpp
-   src/conti_ARS408_sensor_object.cpp
+ add_library(conti_ars408_msg
+   src/conti_ars408_sensor_state.cpp
+   src/conti_ars408_sensor_config.cpp
+   src/conti_ars408_sensor_input.cpp
+   src/conti_ars408_sensor_cluster.cpp
+   src/conti_ars408_sensor_object.cpp
  )
 
- add_library(conti_ARS408_can
-    src/conti_ARS408_sensor_can.cpp
+ add_library(conti_ars408_can
+    src/conti_ars408_sensor_can.cpp
  )
 
  add_library(socket_can
     src/socket_can.cpp
  )
 
- target_link_libraries(conti_ARS408_can conti_ARS408_msg socket_can)
+ target_link_libraries(conti_ars408_can conti_ars408_msg socket_can)
  
 
 ## Add cmake target dependencies of the library
@@ -176,23 +176,23 @@ include_directories(include)
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(conti_ARS408_ros
-    src/conti_ARS408_ros.cpp
-    src/conti_ARS408_ros_config.cpp
-    src/conti_ARS408_ros_state.cpp
-    src/conti_ARS408_ros_input.cpp
-    src/conti_ARS408_ros_cluster.cpp
-    src/conti_ARS408_ros_object.cpp
+add_executable(conti_ars408_ros
+    src/conti_ars408_ros.cpp
+    src/conti_ars408_ros_config.cpp
+    src/conti_ars408_ros_state.cpp
+    src/conti_ars408_ros_input.cpp
+    src/conti_ars408_ros_cluster.cpp
+    src/conti_ars408_ros_object.cpp
  )
 
-add_dependencies(conti_ARS408_ros ${catkin_EXPORTED_TARGETS} conti_ARS408_generate_messages_cpp)
+add_dependencies(conti_ars408_ros ${catkin_EXPORTED_TARGETS} conti_ars408_generate_messages_cpp)
 
-add_executable(conti_ARS408_rviz
-    src/conti_ARS408_rviz.cpp
+add_executable(conti_ars408_rviz
+    src/conti_ars408_rviz.cpp
  )
 
-add_dependencies(conti_ARS408_rviz ${catkin_EXPORTED_TARGETS} conti_ARS408_generate_messages_cpp)
-target_link_libraries(conti_ARS408_rviz ${catkin_LIBRARIES})
+add_dependencies(conti_ars408_rviz ${catkin_EXPORTED_TARGETS} conti_ars408_generate_messages_cpp)
+target_link_libraries(conti_ars408_rviz ${catkin_LIBRARIES})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -205,8 +205,8 @@ target_link_libraries(conti_ARS408_rviz ${catkin_LIBRARIES})
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
- target_link_libraries(conti_ARS408_ros ${catkin_LIBRARIES})
- target_link_libraries(conti_ARS408_ros conti_ARS408_can ${catkin_LIBRARIES})
+ target_link_libraries(conti_ars408_ros ${catkin_LIBRARIES})
+ target_link_libraries(conti_ars408_ros conti_ars408_can ${catkin_LIBRARIES})
 
 #############
 ## Install ##
@@ -233,10 +233,10 @@ target_link_libraries(conti_ARS408_rviz ${catkin_LIBRARIES})
  install(
    TARGETS
    socket_can
-   conti_ARS408_can
-   conti_ARS408_msg
-   conti_ARS408_ros
-   conti_ARS408_rviz
+   conti_ars408_can
+   conti_ars408_msg
+   conti_ars408_ros
+   conti_ars408_rviz
    ARCHIVE DESTINATION lib/${PROJECT_NAME}
    LIBRARY DESTINATION lib/${PROJECT_NAME}
    RUNTIME DESTINATION lib/${PROJECT_NAME}

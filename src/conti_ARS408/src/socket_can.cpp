@@ -1,9 +1,9 @@
 /*Written by @shiveshkhaitan
 https://github.com/Project-MANAS/socket_can*/
 
-#include "conti_ARS408/socket_can.hpp"
+#include "conti_ars408/socket_can.hpp"
 
-namespace conti_ARS408
+namespace conti_ars408
 {
     SocketCAN::SocketCAN(const char * ifname) :
     ifname_(ifname),

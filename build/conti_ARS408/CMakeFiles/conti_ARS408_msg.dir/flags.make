@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -fPIC   -Wall -Wextra -Wpedantic -std=gnu++14
 
-CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"conti_ARS408\" -Dconti_ARS408_msg_EXPORTS
+CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"conti_ars408\" -Dconti_ars408_msg_EXPORTS
 
-CXX_INCLUDES = -I/home/chen/agri_ros/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/chen/agri_ros/src/conti_ARS408/include 
+CXX_INCLUDES = -I/home/chen/agri_ros/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/chen/agri_ros/src/conti_ars408/include 
 

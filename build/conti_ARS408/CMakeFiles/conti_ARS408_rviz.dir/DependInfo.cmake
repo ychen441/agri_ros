@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/chen/agri_ros/src/conti_ARS408/src/conti_ARS408_rviz.cpp" "/home/chen/agri_ros/build/conti_ARS408/CMakeFiles/conti_ARS408_rviz.dir/src/conti_ARS408_rviz.cpp.o"
+  "/home/chen/agri_ros/src/conti_ars408/src/conti_ars408_rviz.cpp" "/home/chen/agri_ros/build/conti_ars408/CMakeFiles/conti_ars408_rviz.dir/src/conti_ars408_rviz.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -12,7 +12,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"
-  "ROS_PACKAGE_NAME=\"conti_ARS408\""
+  "ROS_PACKAGE_NAME=\"conti_ars408\""
   )
 
 # The include file search paths:
@@ -20,7 +20,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/chen/agri_ros/devel/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/chen/agri_ros/src/conti_ARS408/include"
+  "/home/chen/agri_ros/src/conti_ars408/include"
   )
 
 # Targets to which this target links.

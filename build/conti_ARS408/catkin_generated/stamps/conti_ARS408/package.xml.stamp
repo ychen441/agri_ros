@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>conti_ARS408</name>
+  <name>conti_ars408</name>
   <version>0.0.0</version>
   <description>The package is modified from Shivesh's ars_40X package @https://github.com/Project-MANAS/ars_40X</description>
   <maintainer email="ychen_441@163.com">chen</maintainer>
