@@ -467,10 +467,10 @@ catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 class_loader_DIR:PATH=/opt/ros/noetic/share/class_loader/cmake
 
 //Value Computed by CMake
-conti_ars408_BINARY_DIR:STATIC=/home/chen/agri_ros/build/conti_ARS408
+conti_ars408_BINARY_DIR:STATIC=/home/chen/agri_ros/build/conti_ars408
 
 //Value Computed by CMake
-conti_ars408_SOURCE_DIR:STATIC=/home/chen/agri_ros/src/conti_ARS408
+conti_ars408_SOURCE_DIR:STATIC=/home/chen/agri_ros/src/conti_ars408
 
 //Dependencies for the target
 conti_ars408_can_LIB_DEPENDS:STATIC=general;conti_ars408_msg;general;socket_can;

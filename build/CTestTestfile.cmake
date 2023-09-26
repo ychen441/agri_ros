@@ -7,6 +7,6 @@
 subdirs("gtest")
 subdirs("realsense-ros/realsense2_description")
 subdirs("time_sync")
-subdirs("conti_ARS408")
+subdirs("conti_ars408")
 subdirs("rslidar_sdk")
 subdirs("realsense-ros/realsense2_camera")

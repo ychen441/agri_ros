@@ -133,7 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/chen/agri_ros/build/gtest/cmake_install.cmake")
   include("/home/chen/agri_ros/build/realsense-ros/realsense2_description/cmake_install.cmake")
   include("/home/chen/agri_ros/build/time_sync/cmake_install.cmake")
-  include("/home/chen/agri_ros/build/conti_ARS408/cmake_install.cmake")
+  include("/home/chen/agri_ros/build/conti_ars408/cmake_install.cmake")
   include("/home/chen/agri_ros/build/rslidar_sdk/cmake_install.cmake")
   include("/home/chen/agri_ros/build/realsense-ros/realsense2_camera/cmake_install.cmake")
 
