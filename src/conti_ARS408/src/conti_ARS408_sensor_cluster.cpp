@@ -47,25 +47,25 @@ namespace conti_ARS408{
         double conti_0x701_ClusterGeneral::get_TargetDistLong(){
 
             return static_cast<double>((ClusterGeneral_msgs.cluster_general.TargetDistLong1 << 5 | 
-                                        ClusterGeneral_msgs.cluster_general.TargetDistLong2) * 0.2 + 500.0);
+                                        ClusterGeneral_msgs.cluster_general.TargetDistLong2) * 0.2 - 500.0);
         }
 
         double conti_0x701_ClusterGeneral::get_TargetDistLat(){
 
             return static_cast<double>((ClusterGeneral_msgs.cluster_general.TargetDistLat1 << 8 | 
-                                        ClusterGeneral_msgs.cluster_general.TargetDistLat2) * 0.2 + 102.3);
+                                        ClusterGeneral_msgs.cluster_general.TargetDistLat2) * 0.2 - 102.3);
         }
 
         double conti_0x701_ClusterGeneral::get_TargetVrelLong(){
 
             return static_cast<double>((ClusterGeneral_msgs.cluster_general.TargetVrelLong1 << 2 | 
-                                        ClusterGeneral_msgs.cluster_general.TargetVrelLong2) * 0.25 + 128.0);
+                                        ClusterGeneral_msgs.cluster_general.TargetVrelLong2) * 0.25 - 128.0);
         }
 
         double conti_0x701_ClusterGeneral::get_TargetVrelLat(){
 
             return static_cast<double>((ClusterGeneral_msgs.cluster_general.TargetVrelLat1 << 3 | 
-                                        ClusterGeneral_msgs.cluster_general.TargetVrelLat2) * 0.25 + 64.0);
+                                        ClusterGeneral_msgs.cluster_general.TargetVrelLat2) * 0.25 - 64.0);
         }
 
         int conti_0x701_ClusterGeneral::get_TargetDynProp(){
@@ -75,7 +75,7 @@ namespace conti_ARS408{
 
         double conti_0x701_ClusterGeneral::get_TargetRCS(){
 
-            return static_cast<double>((ClusterGeneral_msgs.cluster_general.TargetRCS) * 0.5 + 64.0);
+            return static_cast<double>((ClusterGeneral_msgs.cluster_general.TargetRCS) * 0.5 - 64.0);
         }
 
         sensor_ClusterGeneral *conti_0x701_ClusterGeneral::get_ClusterGeneral(){

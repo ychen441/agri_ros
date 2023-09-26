@@ -17,13 +17,13 @@ namespace conti_ARS408{
         velocity_RViz_pub_ = nh.advertise<visualization_msgs::MarkerArray>("velocity_RViz", 50);
         
         /*Subscribe cluster_ROS and object_ROS.nodes with clusters and objs info, perspectively*/
-        cluster_RViz_sub_ = nh.subscribe("conti_ARS408/cluster_ROS", 50, &conti_ARS408_RViz::cluster_RViz_Callback, this);
-        object_RViz_sub_ = nh.subscribe("conti_ARS408/object_ROS", 50, &conti_ARS408_RViz::object_RViz_Callback, this);
+        cluster_RViz_sub_ = nh.subscribe("conti_ARS408/cluster_ROS", 50, &conti_ARS408_RViz::cluster_RViz, this);
+        object_RViz_sub_ = nh.subscribe("conti_ARS408/object_ROS", 50, &conti_ARS408_RViz::object_RViz, this);
     }
 
     conti_ARS408::conti_ARS408_RViz::~conti_ARS408_RViz(){}
 
-    void conti_ARS408::conti_ARS408_RViz::cluster_RViz_Callback(conti_ARS408::radar_cluster radar_clusters){
+    void conti_ARS408::conti_ARS408_RViz::cluster_RViz(conti_ARS408::radar_cluster radar_clusters){
 
         visualization_msgs::MarkerArray cluster_array;
 
@@ -130,7 +130,7 @@ namespace conti_ARS408{
         cluster_RViz_pub_.publish(cluster_array);
     }
 
-    void conti_ARS408::conti_ARS408_RViz::object_RViz_Callback(conti_ARS408::radar_object radar_objects){
+    void conti_ARS408::conti_ARS408_RViz::object_RViz(conti_ARS408::radar_object radar_objects){
 
         visualization_msgs::MarkerArray object_array;
         visualization_msgs::MarkerArray velocity_array;
