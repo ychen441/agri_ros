@@ -6,7 +6,7 @@
 namespace conti_ars408{
 
     conti_ars408::cluster_ROS::cluster_ROS(ros::NodeHandle &nh, conti_ars408::CONTI_ARS408_CAN *conti_ars408_can):
-        conti_ars408_can_(conti_ars408_can), cluster_id_(0){
+        cluster_id_(0), conti_ars408_can_(conti_ars408_can){
 
             conti_0x600_ClusterStatus_ = conti_ars408_can->get_ClusterStatus();
             conti_0x701_ClusterGeneral_ = conti_ars408_can->get_ClusterGeneral();
