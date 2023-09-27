@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -130,9 +130,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/chen/agri_ros/build/gtest/cmake_install.cmake")
+  include("/home/chen/agri_ros/build/realsense-ros/realsense2_description/cmake_install.cmake")
   include("/home/chen/agri_ros/build/time_sync/cmake_install.cmake")
   include("/home/chen/agri_ros/build/conti_ars408/cmake_install.cmake")
+  include("/home/chen/agri_ros/build/rslidar_sdk/cmake_install.cmake")
+  include("/home/chen/agri_ros/build/realsense-ros/realsense2_camera/cmake_install.cmake")
 
 endif()
 

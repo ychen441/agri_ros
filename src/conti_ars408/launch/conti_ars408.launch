@@ -6,7 +6,7 @@
 
     <group if = "$(arg rviz)">
         <node pkg = "conti_ars408" type = "conti_ars408_rviz" name = "conti_ars408_rviz"/>
-        <node pkg = "rviz" type = "rviz" name = "rviz" args = "-d $(find conti_ars408)/rviz_cfg/conti_ars408.rviz"/>
+        <node pkg = "rviz" type = "rviz" name = "radar_rviz" args = "-d $(find conti_ars408)/rviz_cfg/conti_ars408.rviz"/>
     </group>
 
 </launch>
