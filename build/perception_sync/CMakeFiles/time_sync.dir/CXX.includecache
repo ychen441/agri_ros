@@ -24,13 +24,13 @@ sensor_msgs/image_encodings.h
 sensor_msgs/PointCloud2.h
 -
 conti_ars408/radar_cluster.h
-/home/chen/agri_ros/src/perception_sync/include/perception_sync/conti_ars408/radar_cluster.h
+-
 conti_ars408/radar_cluster_info.h
-/home/chen/agri_ros/src/perception_sync/include/perception_sync/conti_ars408/radar_cluster_info.h
+-
 conti_ars408/radar_object.h
-/home/chen/agri_ros/src/perception_sync/include/perception_sync/conti_ars408/radar_object.h
+-
 conti_ars408/radar_object_info.h
-/home/chen/agri_ros/src/perception_sync/include/perception_sync/conti_ars408/radar_object_info.h
+-
 
 /home/chen/agri_ros/src/perception_sync/src/time_sync.cpp
 ros/ros.h
