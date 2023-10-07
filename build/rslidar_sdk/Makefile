@@ -171,81 +171,6 @@ rslidar_sdk_node/fast:
 	cd /home/chen/agri_ros/build && $(MAKE) -f rslidar_sdk/CMakeFiles/rslidar_sdk_node.dir/build.make rslidar_sdk/CMakeFiles/rslidar_sdk_node.dir/build
 .PHONY : rslidar_sdk_node/fast
 
-# Convenience name for target.
-rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/chen/agri_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/chen/agri_ros/build && $(MAKE) -f rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/chen/agri_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_nodejs: rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/chen/agri_ros/build && $(MAKE) -f rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/chen/agri_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/chen/agri_ros/build && $(MAKE) -f rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/chen/agri_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-.PHONY : rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_eus: rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_eus
-
-# fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	cd /home/chen/agri_ros/build && $(MAKE) -f rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/chen/agri_ros/build && $(MAKE) -f CMakeFiles/Makefile2 rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/chen/agri_ros/build && $(MAKE) -f rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
 node/rslidar_sdk_node.o: node/rslidar_sdk_node.cpp.o
 
 .PHONY : node/rslidar_sdk_node.o
@@ -313,11 +238,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... rslidar_sdk_node"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... node/rslidar_sdk_node.o"
 	@echo "... node/rslidar_sdk_node.i"
 	@echo "... node/rslidar_sdk_node.s"

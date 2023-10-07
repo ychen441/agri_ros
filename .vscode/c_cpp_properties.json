@@ -7,11 +7,12 @@
             },
             "includePath": [
                 "/opt/ros/noetic/include/**",
-                "/home/chen/agri_ros/src/conti_ars408/include/**",
-                "/home/chen/agri_ros/src/realsense-ros/realsense2_camera/include/**",
+                "/home/chen/agri_ros/src/conti_ars408/include",
+                "/home/chen/agri_ros/src/realsense-ros/realsense2_camera/include",
                 "/usr/include/**",
                 "/opt/ros/noetic/include",
-                "/home/chen/agri_ros/devel/**"
+                "${workspaceFolder}/devel/include",
+                "${workspaceFolder}/src/perception_sync/include"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

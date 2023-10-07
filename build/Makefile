@@ -1067,17 +1067,17 @@ conti_ars408_generate_messages_nodejs/fast:
 .PHONY : conti_ars408_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named rslidar_sdk_node
+# Target rules for targets named time_sync
 
 # Build rule for target.
-rslidar_sdk_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rslidar_sdk_node
-.PHONY : rslidar_sdk_node
+time_sync: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 time_sync
+.PHONY : time_sync
 
 # fast build rule for target.
-rslidar_sdk_node/fast:
-	$(MAKE) -f rslidar_sdk/CMakeFiles/rslidar_sdk_node.dir/build.make rslidar_sdk/CMakeFiles/rslidar_sdk_node.dir/build
-.PHONY : rslidar_sdk_node/fast
+time_sync/fast:
+	$(MAKE) -f perception_sync/CMakeFiles/time_sync.dir/build.make perception_sync/CMakeFiles/time_sync.dir/build
+.PHONY : time_sync/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_py
@@ -1089,7 +1089,7 @@ sensor_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	$(MAKE) -f perception_sync/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make perception_sync/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -1102,7 +1102,7 @@ sensor_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f perception_sync/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make perception_sync/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -1115,7 +1115,7 @@ sensor_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f perception_sync/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make perception_sync/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -1128,7 +1128,7 @@ sensor_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	$(MAKE) -f rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f perception_sync/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make perception_sync/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 #=============================================================================
@@ -1141,8 +1141,21 @@ sensor_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make rslidar_sdk/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f perception_sync/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make perception_sync/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rslidar_sdk_node
+
+# Build rule for target.
+rslidar_sdk_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rslidar_sdk_node
+.PHONY : rslidar_sdk_node
+
+# fast build rule for target.
+rslidar_sdk_node/fast:
+	$(MAKE) -f rslidar_sdk/CMakeFiles/rslidar_sdk_node.dir/build.make rslidar_sdk/CMakeFiles/rslidar_sdk_node.dir/build
+.PHONY : rslidar_sdk_node/fast
 
 #=============================================================================
 # Target rules for targets named realsense2_camera_genpy
@@ -1902,12 +1915,13 @@ help:
 	@echo "... conti_ars408_gennodejs"
 	@echo "... conti_ars408_geneus"
 	@echo "... conti_ars408_generate_messages_nodejs"
-	@echo "... rslidar_sdk_node"
+	@echo "... time_sync"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... rslidar_sdk_node"
 	@echo "... realsense2_camera_genpy"
 	@echo "... realsense2_camera_generate_messages_nodejs"
 	@echo "... realsense2_camera_generate_messages_lisp"
