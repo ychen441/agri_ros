@@ -28,17 +28,25 @@ namespace perception_sync{
         time_sync();
         void callback(
             const sensor_msgs::ImageConstPtr & image, 
-            const visualization_msgs::Marker::ConstPtr & radar_clusters);
+            const visualization_msgs::Marker::ConstPtr & radar_clusters,
+            const visualization_msgs::Marker::ConstPtr & radar_objects,
+            const sensor_msgs::PointCloud2ConstPtr & lidar_pcd);
         
         private:
         ros::NodeHandle nh;
         ros::Publisher camera_pub;
         ros::Publisher radar_cluster_pub;
+        ros::Publisher radar_object_pub;
+        ros::Publisher lidar_pub;
         
         message_filters::Subscriber<sensor_msgs::Image> camera_sub;
         message_filters::Subscriber<visualization_msgs::Marker> radar_cluster_sub;
+        message_filters::Subscriber<visualization_msgs::Marker> radar_object_sub;
+        message_filters::Subscriber<sensor_msgs::PointCloud2> lidar_sub;   
 
-        typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::Image, visualization_msgs::Marker> time_sync_policy;
+        typedef message_filters::sync_policies::ApproximateTime<
+            sensor_msgs::Image, visualization_msgs::Marker, 
+            visualization_msgs::Marker, sensor_msgs::PointCloud2> time_sync_policy;
         typedef message_filters::Synchronizer<time_sync_policy> time_synchroniser;
         boost::shared_ptr<time_synchroniser> time_sync_;
     };
