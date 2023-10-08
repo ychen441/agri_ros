@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
     std_msgs
     sensor_msgs
     message_filters
+    conti_ars408
 )
 
 ## System dependencies are found with CMake's conventions
@@ -104,7 +105,10 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  CATKIN_DEPENDS  roscpp message_filters sensor_msgs std_msgs
+  CATKIN_DEPENDS
+  roscpp 
+  message_filters 
+  sensor_msgs std_msgs
 )
 
 ###########
@@ -147,6 +151,8 @@ include_directories(include)
 # target_link_libraries(perception_time_sync
 #   ${catkin_LIBRARIES}
 # )
+
+
 
  target_link_libraries(time_sync
    #perception_time_sync

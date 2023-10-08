@@ -2311,7 +2311,9 @@ conti_ars408/CMakeFiles/conti_ars408_generate_messages_nodejs.dir/clean:
 # Target rules for target perception_sync/CMakeFiles/time_sync.dir
 
 # All Build rule for target.
-perception_sync/CMakeFiles/time_sync.dir/all:
+perception_sync/CMakeFiles/time_sync.dir/all: conti_ars408/CMakeFiles/socket_can.dir/all
+perception_sync/CMakeFiles/time_sync.dir/all: conti_ars408/CMakeFiles/conti_ars408_can.dir/all
+perception_sync/CMakeFiles/time_sync.dir/all: conti_ars408/CMakeFiles/conti_ars408_msg.dir/all
 	$(MAKE) -f perception_sync/CMakeFiles/time_sync.dir/build.make perception_sync/CMakeFiles/time_sync.dir/depend
 	$(MAKE) -f perception_sync/CMakeFiles/time_sync.dir/build.make perception_sync/CMakeFiles/time_sync.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chen/agri_ros/build/CMakeFiles --progress-num=99,100 "Built target time_sync"
@@ -2319,7 +2321,7 @@ perception_sync/CMakeFiles/time_sync.dir/all:
 
 # Build rule for subdir invocation for target.
 perception_sync/CMakeFiles/time_sync.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chen/agri_ros/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chen/agri_ros/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 perception_sync/CMakeFiles/time_sync.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chen/agri_ros/build/CMakeFiles 0
 .PHONY : perception_sync/CMakeFiles/time_sync.dir/rule

@@ -17,6 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/chen/agri_ros/devel/include"
+  "/home/chen/agri_ros/src/conti_ars408/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/home/chen/agri_ros/src/perception_sync/include"
@@ -24,6 +26,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/chen/agri_ros/build/conti_ars408/CMakeFiles/conti_ars408_can.dir/DependInfo.cmake"
+  "/home/chen/agri_ros/build/conti_ars408/CMakeFiles/conti_ars408_msg.dir/DependInfo.cmake"
+  "/home/chen/agri_ros/build/conti_ars408/CMakeFiles/socket_can.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
