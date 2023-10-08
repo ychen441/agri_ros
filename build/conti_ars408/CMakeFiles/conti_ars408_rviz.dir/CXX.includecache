@@ -101,6 +101,8 @@ ros/ros.h
 -
 visualization_msgs/MarkerArray.h
 -
+visualization_msgs/Marker.h
+-
 tf2_geometry_msgs/tf2_geometry_msgs.h
 -
 conti_ars408/radar_cluster.h

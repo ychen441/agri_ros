@@ -1,5 +1,6 @@
 #include <ros/ros.h>
 #include <visualization_msgs/MarkerArray.h>
+#include <visualization_msgs/Marker.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 
 #include "conti_ars408/radar_cluster.h"
@@ -12,9 +13,12 @@ namespace conti_ars408{
 
         ros::NodeHandle nh;
 
-        cluster_RViz_pub_ = nh.advertise<visualization_msgs::MarkerArray>("cluster_RViz", 50);
+        /*cluster_RViz_pub_ = nh.advertise<visualization_msgs::MarkerArray>("cluster_RViz", 50);
         object_RViz_pub_ = nh.advertise<visualization_msgs::MarkerArray>("object_RViz", 50);
-        velocity_RViz_pub_ = nh.advertise<visualization_msgs::MarkerArray>("velocity_RViz", 50);
+        velocity_RViz_pub_ = nh.advertise<visualization_msgs::MarkerArray>("velocity_RViz", 50);*/
+        cluster_RViz_pub_ = nh.advertise<visualization_msgs::Marker>("cluster_RViz", 50);
+        object_RViz_pub_ = nh.advertise<visualization_msgs::Marker>("object_RViz", 50);
+        velocity_RViz_pub_ = nh.advertise<visualization_msgs::Marker>("velocity_RViz", 50);
         
         /*Subscribe cluster_ROS and object_ROS.nodes with clusters and objs info, perspectively*/
         cluster_RViz_sub_ = nh.subscribe("conti_ars408/cluster_ROS", 50, &conti_ars408_RViz::cluster_RViz, this);
@@ -25,7 +29,7 @@ namespace conti_ars408{
 
     void conti_ars408::conti_ars408_RViz::cluster_RViz(conti_ars408::radar_cluster radar_clusters){
 
-        visualization_msgs::MarkerArray cluster_array;
+        /*visualization_msgs::MarkerArray cluster_array;*/
 
         for (auto cluster_info_new: radar_clusters.cluster_info){
 
@@ -125,15 +129,17 @@ namespace conti_ars408{
             cluster.scale.y = 0.1;
             cluster.color.a = 1.0; //opacity: fully opaque
             cluster.lifetime.fromSec(0.1); //dead after 0.1 sec
-            cluster_array.markers.push_back(cluster);
+            /*cluster_array.markers.push_back(cluster);*/
+            cluster_RViz_pub_.publish(cluster);
         }
-        cluster_RViz_pub_.publish(cluster_array);
+        /*cluster_RViz_pub_.publish(cluster_array);*/
+        /*cluster_RViz_pub_.publish(cluster);*/
     }
 
     void conti_ars408::conti_ars408_RViz::object_RViz(conti_ars408::radar_object radar_objects){
 
-        visualization_msgs::MarkerArray object_array;
-        visualization_msgs::MarkerArray velocity_array;
+        /*visualization_msgs::MarkerArray object_array;
+        visualization_msgs::MarkerArray velocity_array;*/
 
         for(auto object_info_new: radar_objects.object_info){
 
@@ -234,7 +240,7 @@ namespace conti_ars408{
 
         object.color.a = 1.0;
         object.lifetime.fromSec(0.1);
-        object_array.markers.push_back(object);
+        /*object_array.markers.push_back(object);*/
 
         visualization_msgs::Marker velocity;
 
@@ -249,11 +255,14 @@ namespace conti_ars408{
         velocity.scale.z = 1; //scale.z specifies the height of an uppercase "A"
         velocity.color.a = 1;
 
-        velocity_array.markers.push_back(velocity);
+        /*velocity_array.markers.push_back(velocity);*/
+
+        object_RViz_pub_.publish(object);
+        velocity_RViz_pub_.publish(velocity);
         }
 
-    object_RViz_pub_.publish(object_array);
-    velocity_RViz_pub_.publish(velocity_array);
+    /*object_RViz_pub_.publish(object_array);
+    velocity_RViz_pub_.publish(velocity_array);*/
     }
 }
 

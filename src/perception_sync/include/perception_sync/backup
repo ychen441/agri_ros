@@ -16,9 +16,6 @@
 #include <conti_ars408/radar_object.h>
 #include <conti_ars408/radar_object_info.h>
 
-#include <visualization_msgs/MarkerArray.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
-
 
 namespace perception_sync{
 
@@ -28,17 +25,23 @@ namespace perception_sync{
         time_sync();
         void callback(
             const sensor_msgs::ImageConstPtr & image, 
-            const visualization_msgs::Marker::ConstPtr & radar_clusters);
+            const sensor_msgs::PointCloud2ConstPtr & pointcloud, 
+            const conti_ars408::radar_cluster::ConstPtr & radar_clusters, 
+            const conti_ars408::radar_object::ConstPtr & radar_objects);
         
         private:
         ros::NodeHandle nh;
         ros::Publisher camera_pub;
+        ros::Publisher lidar_pub;
         ros::Publisher radar_cluster_pub;
+        ros::Publisher radar_object_pub;
         
         message_filters::Subscriber<sensor_msgs::Image> camera_sub;
-        message_filters::Subscriber<visualization_msgs::Marker> radar_cluster_sub;
+        message_filters::Subscriber<sensor_msgs::PointCloud2> lidar_sub;
+        message_filters::Subscriber<conti_ars408::radar_cluster> radar_cluster_sub;
+        message_filters::Subscriber<conti_ars408::radar_object> radar_object_sub;
 
-        typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::Image, visualization_msgs::Marker> time_sync_policy;
+        typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::Image, sensor_msgs::PointCloud2, conti_ars408::radar_cluster, conti_ars408::radar_object> time_sync_policy;
         typedef message_filters::Synchronizer<time_sync_policy> time_synchroniser;
         boost::shared_ptr<time_synchroniser> time_sync_;
     };

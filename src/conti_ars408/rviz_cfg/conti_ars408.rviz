@@ -73,26 +73,26 @@ Visualization Manager:
         {}
       Update Interval: 0
       Value: true
-    - Class: rviz/MarkerArray
+    - Class: rviz/Marker
       Enabled: true
       Marker Topic: /cluster_RViz
-      Name: MarkerArray
+      Name: Marker
       Namespaces:
         {}
       Queue Size: 100
       Value: true
-    - Class: rviz/MarkerArray
+    - Class: rviz/Marker
       Enabled: true
       Marker Topic: /object_RViz
-      Name: MarkerArray
+      Name: Marker
       Namespaces:
         {}
       Queue Size: 100
       Value: true
-    - Class: rviz/MarkerArray
+    - Class: rviz/Marker
       Enabled: true
       Marker Topic: /velocity_RViz
-      Name: MarkerArray
+      Name: Marker
       Namespaces:
         {}
       Queue Size: 100
