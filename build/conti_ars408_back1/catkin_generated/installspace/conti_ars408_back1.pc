@@ -1,0 +1,8 @@
+prefix=/home/chen/agri_ros/install
+
+Name: conti_ars408_back1
+Description: Description of conti_ars408_back1
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lconti_ars408_back1_can -lconti_ars408_back1_msg -lsocket_can_back1
+Requires: roscpp message_runtime

@@ -80,6 +80,17 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -113,17 +124,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/chen/agri_ros/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chen/agri_ros/build/CMakeFiles /home/chen/agri_ros/build/time_sync/CMakeFiles/progress.marks
@@ -156,6 +156,90 @@ depend:
 	cd /home/chen/agri_ros/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+time_sync/CMakeFiles/tsync_object.dir/rule:
+	cd /home/chen/agri_ros/build && $(MAKE) -f CMakeFiles/Makefile2 time_sync/CMakeFiles/tsync_object.dir/rule
+.PHONY : time_sync/CMakeFiles/tsync_object.dir/rule
+
+# Convenience name for target.
+tsync_object: time_sync/CMakeFiles/tsync_object.dir/rule
+
+.PHONY : tsync_object
+
+# fast build rule for target.
+tsync_object/fast:
+	cd /home/chen/agri_ros/build && $(MAKE) -f time_sync/CMakeFiles/tsync_object.dir/build.make time_sync/CMakeFiles/tsync_object.dir/build
+.PHONY : tsync_object/fast
+
+# Convenience name for target.
+time_sync/CMakeFiles/tsync_cluster.dir/rule:
+	cd /home/chen/agri_ros/build && $(MAKE) -f CMakeFiles/Makefile2 time_sync/CMakeFiles/tsync_cluster.dir/rule
+.PHONY : time_sync/CMakeFiles/tsync_cluster.dir/rule
+
+# Convenience name for target.
+tsync_cluster: time_sync/CMakeFiles/tsync_cluster.dir/rule
+
+.PHONY : tsync_cluster
+
+# fast build rule for target.
+tsync_cluster/fast:
+	cd /home/chen/agri_ros/build && $(MAKE) -f time_sync/CMakeFiles/tsync_cluster.dir/build.make time_sync/CMakeFiles/tsync_cluster.dir/build
+.PHONY : tsync_cluster/fast
+
+src/tsync_cluster.o: src/tsync_cluster.cpp.o
+
+.PHONY : src/tsync_cluster.o
+
+# target to build an object file
+src/tsync_cluster.cpp.o:
+	cd /home/chen/agri_ros/build && $(MAKE) -f time_sync/CMakeFiles/tsync_cluster.dir/build.make time_sync/CMakeFiles/tsync_cluster.dir/src/tsync_cluster.cpp.o
+.PHONY : src/tsync_cluster.cpp.o
+
+src/tsync_cluster.i: src/tsync_cluster.cpp.i
+
+.PHONY : src/tsync_cluster.i
+
+# target to preprocess a source file
+src/tsync_cluster.cpp.i:
+	cd /home/chen/agri_ros/build && $(MAKE) -f time_sync/CMakeFiles/tsync_cluster.dir/build.make time_sync/CMakeFiles/tsync_cluster.dir/src/tsync_cluster.cpp.i
+.PHONY : src/tsync_cluster.cpp.i
+
+src/tsync_cluster.s: src/tsync_cluster.cpp.s
+
+.PHONY : src/tsync_cluster.s
+
+# target to generate assembly for a file
+src/tsync_cluster.cpp.s:
+	cd /home/chen/agri_ros/build && $(MAKE) -f time_sync/CMakeFiles/tsync_cluster.dir/build.make time_sync/CMakeFiles/tsync_cluster.dir/src/tsync_cluster.cpp.s
+.PHONY : src/tsync_cluster.cpp.s
+
+src/tsync_object.o: src/tsync_object.cpp.o
+
+.PHONY : src/tsync_object.o
+
+# target to build an object file
+src/tsync_object.cpp.o:
+	cd /home/chen/agri_ros/build && $(MAKE) -f time_sync/CMakeFiles/tsync_object.dir/build.make time_sync/CMakeFiles/tsync_object.dir/src/tsync_object.cpp.o
+.PHONY : src/tsync_object.cpp.o
+
+src/tsync_object.i: src/tsync_object.cpp.i
+
+.PHONY : src/tsync_object.i
+
+# target to preprocess a source file
+src/tsync_object.cpp.i:
+	cd /home/chen/agri_ros/build && $(MAKE) -f time_sync/CMakeFiles/tsync_object.dir/build.make time_sync/CMakeFiles/tsync_object.dir/src/tsync_object.cpp.i
+.PHONY : src/tsync_object.cpp.i
+
+src/tsync_object.s: src/tsync_object.cpp.s
+
+.PHONY : src/tsync_object.s
+
+# target to generate assembly for a file
+src/tsync_object.cpp.s:
+	cd /home/chen/agri_ros/build && $(MAKE) -f time_sync/CMakeFiles/tsync_object.dir/build.make time_sync/CMakeFiles/tsync_object.dir/src/tsync_object.cpp.s
+.PHONY : src/tsync_object.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,10 +248,18 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... edit_cache"
+	@echo "... tsync_object"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
+	@echo "... tsync_cluster"
+	@echo "... src/tsync_cluster.o"
+	@echo "... src/tsync_cluster.i"
+	@echo "... src/tsync_cluster.s"
+	@echo "... src/tsync_object.o"
+	@echo "... src/tsync_object.i"
+	@echo "... src/tsync_object.s"
 .PHONY : help
 
 

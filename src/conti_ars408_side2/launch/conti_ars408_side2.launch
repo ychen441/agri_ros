@@ -1,0 +1,12 @@
+<launch>
+    <arg name = "rviz" default = "true"/>
+
+    <node pkg = "conti_ars408_side2" type = "conti_ars408_side2_ros" name = "conti_ars408_side2_ros" output = "screen">
+    </node>
+
+    <group if = "$(arg rviz)">
+        <node pkg = "conti_ars408_side2" type = "conti_ars408_side2_rviz" name = "conti_ars408_side2_rviz"/>
+        <node pkg = "rviz" type = "rviz" name = "radar_side2_rviz" args = "-d $(find conti_ars408_side2)/rviz_cfg/conti_ars408_side2.rviz"/>
+    </group>
+
+</launch>

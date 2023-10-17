@@ -475,8 +475,44 @@ conti_ars408_DIR:PATH=/home/chen/agri_ros/devel/share/conti_ars408/cmake
 //Value Computed by CMake
 conti_ars408_SOURCE_DIR:STATIC=/home/chen/agri_ros/src/conti_ars408
 
+//Value Computed by CMake
+conti_ars408_back1_BINARY_DIR:STATIC=/home/chen/agri_ros/build/conti_ars408_back1
+
+//Value Computed by CMake
+conti_ars408_back1_SOURCE_DIR:STATIC=/home/chen/agri_ros/src/conti_ars408_back1
+
+//Dependencies for the target
+conti_ars408_back1_can_LIB_DEPENDS:STATIC=general;conti_ars408_back1_msg;general;socket_can_back1;
+
+//Value Computed by CMake
+conti_ars408_back2_BINARY_DIR:STATIC=/home/chen/agri_ros/build/conti_ars408_back2
+
+//Value Computed by CMake
+conti_ars408_back2_SOURCE_DIR:STATIC=/home/chen/agri_ros/src/conti_ars408_back2
+
+//Dependencies for the target
+conti_ars408_back2_can_LIB_DEPENDS:STATIC=general;conti_ars408_back2_msg;general;socket_can_back2;
+
 //Dependencies for the target
 conti_ars408_can_LIB_DEPENDS:STATIC=general;conti_ars408_msg;general;socket_can;
+
+//Value Computed by CMake
+conti_ars408_side1_BINARY_DIR:STATIC=/home/chen/agri_ros/build/conti_ars408_side1
+
+//Value Computed by CMake
+conti_ars408_side1_SOURCE_DIR:STATIC=/home/chen/agri_ros/src/conti_ars408_side1
+
+//Dependencies for the target
+conti_ars408_side1_can_LIB_DEPENDS:STATIC=general;conti_ars408_side1_msg;general;socket_can_side1;
+
+//Value Computed by CMake
+conti_ars408_side2_BINARY_DIR:STATIC=/home/chen/agri_ros/build/conti_ars408_side2
+
+//Value Computed by CMake
+conti_ars408_side2_SOURCE_DIR:STATIC=/home/chen/agri_ros/src/conti_ars408_side2
+
+//Dependencies for the target
+conti_ars408_side2_can_LIB_DEPENDS:STATIC=general;conti_ars408_side2_msg;general;socket_can_side2;
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
@@ -567,7 +603,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 image_transport_DIR:PATH=/opt/ros/noetic/share/image_transport/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/libdiagnostic_updater.so
+lib:FILEPATH=/opt/ros/noetic/lib/libmessage_filters.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake
@@ -687,10 +723,10 @@ tf2_ros_DIR:PATH=/opt/ros/noetic/share/tf2_ros/cmake
 tf_DIR:PATH=/opt/ros/noetic/share/tf/cmake
 
 //Value Computed by CMake
-time_sync_BINARY_DIR:STATIC=/home/chen/agri_ros/build/perception_sync
+time_sync_BINARY_DIR:STATIC=/home/chen/agri_ros/build/time_sync
 
 //Value Computed by CMake
-time_sync_SOURCE_DIR:STATIC=/home/chen/agri_ros/src/perception_sync
+time_sync_SOURCE_DIR:STATIC=/home/chen/agri_ros/src/time_sync
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/noetic/share/visualization_msgs/cmake
@@ -849,7 +885,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

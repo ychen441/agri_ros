@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chen/agri_ros/src/conti_ars408_back1/include/conti_ars408_back1/socket_can.hpp
+cstdint
+-
+errno.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+string.h
+-
+net/if.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+sys/ioctl.h
+-
+linux/can.h
+-
+linux/can/raw.h
+-
+
+/home/chen/agri_ros/src/conti_ars408_back1/src/socket_can.cpp
+conti_ars408_back1/socket_can.hpp
+/home/chen/agri_ros/src/conti_ars408_back1/src/conti_ars408_back1/socket_can.hpp
+

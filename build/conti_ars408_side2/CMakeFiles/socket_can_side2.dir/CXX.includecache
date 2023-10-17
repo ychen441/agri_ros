@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chen/agri_ros/src/conti_ars408_side2/src/socket_can.cpp
+conti_ars408_side2/socket_can.hpp
+/home/chen/agri_ros/src/conti_ars408_side2/src/conti_ars408_side2/socket_can.hpp
+

@@ -1,0 +1,8 @@
+prefix=/home/chen/agri_ros/install
+
+Name: conti_ars408_side2
+Description: Description of conti_ars408_side2
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lconti_ars408_side2_can -lconti_ars408_side2_msg -lsocket_can_side2
+Requires: roscpp message_runtime

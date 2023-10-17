@@ -1,0 +1,7 @@
+# Configures the data output to 
+# 0x0: none
+# 0x1: send objects
+# 0x2: send clusters
+
+uint8 output_type
+---

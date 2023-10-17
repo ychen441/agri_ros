@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/chen/agri_ros/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/chen/agri_ros/src/conti_ars408/include/**",
+        "/home/chen/agri_ros/src/conti_ars408_back1/include/**",
+        "/home/chen/agri_ros/src/conti_ars408_side2/include/**",
+        "/home/chen/agri_ros/src/perception_sync/include/**",
+        "/home/chen/agri_ros/src/realsense-ros/realsense2_camera/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

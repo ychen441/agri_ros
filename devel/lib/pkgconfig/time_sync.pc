@@ -5,4 +5,4 @@ Description: Description of time_sync
 Version: 0.0.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: roscpp message_filters sensor_msgs std_msgs

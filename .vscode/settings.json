@@ -1,14 +1,11 @@
 {
     "python.autoComplete.extraPaths": [
+        "/home/chen/agri_ros/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages"
     ],
     "python.analysis.extraPaths": [
+        "/home/chen/agri_ros/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages"
     ],
-    "C_Cpp.errorSquiggles": "disabled",
-    "cmake.configureOnOpen": true,
-    "ros.distro": "noetic",
-    "files.associations": {
-        "functional": "cpp"
-    }
+    "C_Cpp.errorSquiggles": "disabled"
 }

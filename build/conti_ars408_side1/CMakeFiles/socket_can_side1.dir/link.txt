@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libsocket_can_side1.so -o /home/chen/agri_ros/devel/lib/libsocket_can_side1.so CMakeFiles/socket_can_side1.dir/src/socket_can.cpp.o 
