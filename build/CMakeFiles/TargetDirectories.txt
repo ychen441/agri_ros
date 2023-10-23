@@ -236,6 +236,14 @@
 /home/chen/agri_ros/build/rslidar_sdk/src/rs_driver/CMakeFiles/list_install_components.dir
 /home/chen/agri_ros/build/rslidar_sdk/src/rs_driver/CMakeFiles/rebuild_cache.dir
 /home/chen/agri_ros/build/rslidar_sdk/src/rs_driver/CMakeFiles/edit_cache.dir
+/home/chen/agri_ros/build/sync_test/CMakeFiles/install/strip.dir
+/home/chen/agri_ros/build/sync_test/CMakeFiles/install/local.dir
+/home/chen/agri_ros/build/sync_test/CMakeFiles/install.dir
+/home/chen/agri_ros/build/sync_test/CMakeFiles/list_install_components.dir
+/home/chen/agri_ros/build/sync_test/CMakeFiles/rebuild_cache.dir
+/home/chen/agri_ros/build/sync_test/CMakeFiles/edit_cache.dir
+/home/chen/agri_ros/build/sync_test/CMakeFiles/test_object.dir
+/home/chen/agri_ros/build/sync_test/CMakeFiles/test_cluster.dir
 /home/chen/agri_ros/build/realsense-ros/realsense2_camera/CMakeFiles/install/strip.dir
 /home/chen/agri_ros/build/realsense-ros/realsense2_camera/CMakeFiles/install/local.dir
 /home/chen/agri_ros/build/realsense-ros/realsense2_camera/CMakeFiles/install.dir

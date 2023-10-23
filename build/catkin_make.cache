@@ -1,2 +1,2 @@
-conti_ars408:conti_ars408_back1:conti_ars408_back2:conti_ars408_side1:conti_ars408_side2:realsense-ros/realsense2_camera:realsense-ros/realsense2_description:rslidar_sdk:time_sync
+conti_ars408:conti_ars408_back1:conti_ars408_back2:conti_ars408_side1:conti_ars408_side2:realsense-ros/realsense2_camera:realsense-ros/realsense2_description:rslidar_sdk:sync_test:time_sync
 -DCATKIN_DEVEL_PREFIX=/home/chen/agri_ros/devel -DCMAKE_INSTALL_PREFIX=/home/chen/agri_ros/install -G Unix Makefiles

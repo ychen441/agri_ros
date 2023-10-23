@@ -2549,6 +2549,32 @@ sensor_msgs_generate_messages_cpp/fast:
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named test_object
+
+# Build rule for target.
+test_object: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_object
+.PHONY : test_object
+
+# fast build rule for target.
+test_object/fast:
+	$(MAKE) -f sync_test/CMakeFiles/test_object.dir/build.make sync_test/CMakeFiles/test_object.dir/build
+.PHONY : test_object/fast
+
+#=============================================================================
+# Target rules for targets named test_cluster
+
+# Build rule for target.
+test_cluster: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_cluster
+.PHONY : test_cluster
+
+# fast build rule for target.
+test_cluster/fast:
+	$(MAKE) -f sync_test/CMakeFiles/test_cluster.dir/build.make sync_test/CMakeFiles/test_cluster.dir/build
+.PHONY : test_cluster/fast
+
+#=============================================================================
 # Target rules for targets named realsense2_camera_genpy
 
 # Build rule for target.
@@ -3446,6 +3472,8 @@ help:
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... test_object"
+	@echo "... test_cluster"
 	@echo "... realsense2_camera_genpy"
 	@echo "... realsense2_camera_generate_messages_nodejs"
 	@echo "... realsense2_camera_generate_messages_lisp"
